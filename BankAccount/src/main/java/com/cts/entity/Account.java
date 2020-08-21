@@ -1,7 +1,6 @@
 package com.cts.entity;
 
 import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -62,10 +61,9 @@ public class Account {
 	public void setMicrCode(String micrCode) {
 		this.micrCode = micrCode;
 	}
-
-	public ApplicationUser getUser() {
-		return user;
-	}
+	/*
+	 * public ApplicationUser getUser() { return user; }
+	 */
 
 	public void setUser(ApplicationUser user) {
 		this.user = user;
