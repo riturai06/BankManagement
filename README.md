@@ -9,14 +9,14 @@
  3. Mutual Fund microservice
  
  This Project covers -
-       1. Security using JWT
-       2. Hystrix Circuit breaker
-       3. unit testing with mockito 
-       4. Swagger
-       5. Exception Handling  
-       6. All Rest API's 
-       7. Rest Template
-       8. Validations
-       9. API Gateway 
-       10.Eureka discovery Server
-       11.Code Coverage using SonarQube
+        Security using JWT,
+        Hystrix Circuit breaker,
+        unit testing with mockito, 
+        Swagger,
+        Exception Handling,  
+        All Rest API's, 
+        Rest Template,
+        Validations,
+        API Gateway, 
+        Eureka discovery Server,
+        Code Coverage using SonarQube
