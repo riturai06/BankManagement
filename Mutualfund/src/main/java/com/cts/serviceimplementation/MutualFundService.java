@@ -12,6 +12,7 @@ public class MutualFundService {
 
 	@Autowired
 	MutualFundRepository repository;
+
 	public MutualFund addMutualFundDetails(@Valid MutualFund mutualfund) {
 		return repository.save(mutualfund);
 	}

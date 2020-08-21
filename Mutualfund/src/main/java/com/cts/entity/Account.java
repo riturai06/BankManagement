@@ -3,6 +3,8 @@ package com.cts.entity;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -39,9 +41,9 @@ public class Account {
 		this.accountNo = accountNo;
 	}
 
-	public String getIfsc() {
-		return ifsc;
-	}
+	/*
+	 * public String getIfsc() { return ifsc; }
+	 */
 
 	public void setIfsc(String ifsc) {
 		this.ifsc = ifsc;
@@ -55,17 +57,17 @@ public class Account {
 		this.bankName = bankName;
 	}
 
-	public String getMicrCode() {
-		return micrCode;
-	}
+	/*
+	 * public String getMicrCode() { return micrCode; }
+	 */
 
 	public void setMicrCode(String micrCode) {
 		this.micrCode = micrCode;
 	}
 
-	public ApplicationUser getUser() {
-		return user;
-	}
+	/*
+	 * public ApplicationUser getUser() { return user; }
+	 */
 
 	public void setUser(ApplicationUser user) {
 		this.user = user;

@@ -60,11 +60,11 @@ public class MutualFund {
 	public void setTimestamp(LocalDateTime timestamp) {
 		this.timestamp = timestamp;
 	}
-
+/*
 	public ApplicationUser getUser() {
 		return user;
 	}
-
+*/
 	public void setUser(ApplicationUser user) {
 		this.user = user;
 	}

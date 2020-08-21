@@ -58,7 +58,7 @@ public class ApplicationUser implements Serializable {
 	@JsonFormat(pattern = "MM/dd/yyyy")
 	private Date dob;
 
-	public String getFirstName() {
+public String getFirstName() {
 		return firstName;
 	}
 
@@ -66,17 +66,17 @@ public class ApplicationUser implements Serializable {
 		this.firstName = firstName;
 	}
 
-	public String getLastName() {
+/*	public String getLastName() {
 		return LastName;
-	}
+	}*/
 
 	public void setLastName(String lastName) {
 		LastName = lastName;
 	}
 
-	public String getEmailId() {
+/*	public String getEmailId() {
 		return emailId;
-	}
+	}*/
 
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
@@ -98,33 +98,33 @@ public class ApplicationUser implements Serializable {
 		this.panNo = panNo;
 	}
 
-	public String getPassword() {
+/*	public String getPassword() {
 		return password;
-	}
+	}*/
 
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
-	public String getConfirmPassword() {
+/*	public String getConfirmPassword() {
 		return confirmPassword;
-	}
+	}*/
 
 	public void setConfirmPassword(String confirmPassword) {
 		this.confirmPassword = confirmPassword;
 	}
 
-	public Date getDob() {
+/*	public Date getDob() {
 		return dob;
-	}
+	}*/
 
 	public void setDob(Date dob) {
 		this.dob = dob;
 	}
 
-	public List<Account> getAccount() {
+/*	public List<Account> getAccount() {
 		return account;
-	}
+	}*/
 
 	public void setAccount(List<Account> account) {
 		this.account = account;

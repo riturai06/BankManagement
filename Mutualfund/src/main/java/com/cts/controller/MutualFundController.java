@@ -28,15 +28,15 @@ public class MutualFundController {
 		MutualFund fundDetails = service.addMutualFundDetails(mutualfund);
 		return new ResponseEntity<MutualFund>(fundDetails, HttpStatus.OK);
 	}
-	
-	//GET TRANSACTION DETAILS BY PAN NO
 
-	@GetMapping(value="/getFundDetails/{panNo}", produces="application/json")
+	// GET TRANSACTION DETAILS BY PAN NO
+
+	@GetMapping(value = "/getFundDetails/{panNo}", produces = "application/json")
 	public List<MutualFund> getAccountDetail(@PathVariable String panNo) {
 		List<MutualFund> funds = service.getDetail(panNo);
-		
-		//EXCEPTION HANDLING 
-		
+
+		// EXCEPTION HANDLING
+
 		if (funds.isEmpty()) {
 			throw new RuntimeException("No transaction details exist!! ");
 		} else {
@@ -45,13 +45,13 @@ public class MutualFundController {
 		return funds;
 	}
 
-	//GET
-	@GetMapping(value="/getInvestmentDetails/{panNo}/{fundId}", produces="application/json")
+	// GET
+	@GetMapping(value = "/getInvestmentDetails/{panNo}/{fundId}", produces = "application/json")
 	public List<MutualFund> findTransactionDetails(@PathVariable String panNo, @PathVariable Integer fundId) {
 		List<MutualFund> fundDetails = service.getTransactionDetail(panNo, fundId);
-		
+
 		// EXCEPTION HANDLING
-		
+
 		if (fundDetails.isEmpty()) {
 			throw new RuntimeException("No Investment details exist!! ");
 		} else {
