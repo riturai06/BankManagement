@@ -32,21 +32,3 @@ public class BankAccountService {
 	}
 
 }
-
-/*
- * public List<PurchaseResponse> getAllPurchase(Integer buyerId) {
- * List<PurchaseResponse> purchaseResponse = new ArrayList<PurchaseResponse>();
- * List<PurchaseHistory> purchaseHistory =
- * purchaseRepository.findByBuyerId(buyerId);
- * 
- * for(PurchaseHistory history : purchaseHistory) { PurchaseResponse sethistory
- * = new PurchaseResponse(); sethistory.setPurchaseId(history.getPurchaseId());
- * sethistory.setItemId(history.getItemId());
- * sethistory.setNumberOfItems(history.getNumberOfItems());
- * sethistory.setPurchaseRemarks(history.getPurchaseRemarks());
- * purchaseResponse.add(sethistory); }
- * 
- * return purchaseResponse;
- * 
- * }
- */
