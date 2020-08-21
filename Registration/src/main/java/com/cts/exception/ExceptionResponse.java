@@ -3,15 +3,16 @@ package com.cts.exception;
 import java.util.List;
 
 public class ExceptionResponse {
+
+	private String message;
+	private List<String> details;
+
 	public ExceptionResponse(String message, List<String> details) {
 		super();
 		this.message = message;
 		this.details = details;
 	}
 
-	private String message;
-
-	private List<String> details;
 	/*
 	 * public String getMessage() { return message; }
 	 */

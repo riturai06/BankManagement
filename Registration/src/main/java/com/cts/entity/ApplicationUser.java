@@ -140,7 +140,7 @@ public class ApplicationUser implements Serializable {
 	public ApplicationUser(String panNo, @NotEmpty @Pattern(regexp = "[a-zA-Z]{2}[A-Za-z\\s]*") String firstName,
 			String lastName,
 			@NotEmpty(message = "Email is mandatory") @Email(message = "email should be in proper format") String emailId,
-			Long contactNo, String password, String confirmPassword, List<Account> account, Date dob) {
+			Long contactNo, String password, String confirmPassword,List<Account> account, Date dob) {
 		super();
 		this.panNo = panNo;
 		this.firstName = firstName;
@@ -153,6 +153,22 @@ public class ApplicationUser implements Serializable {
 		this.dob = dob;
 	}
 
+	
+	public ApplicationUser(String panNo, @NotEmpty @Pattern(regexp = "[a-zA-Z]{2}[A-Za-z\\s]*") String firstName,
+			String lastName,
+			@NotEmpty(message = "Email is mandatory") @Email(message = "email should be in proper format") String emailId,
+			Long contactNo, String password, String confirmPassword,List<Account> account) {
+		super();
+		this.panNo = panNo;
+		this.firstName = firstName;
+		LastName = lastName;
+		this.emailId = emailId;
+		this.contactNo = contactNo;
+		this.password = password;
+		this.confirmPassword = confirmPassword;
+	    this.account = account;
+		//this.dob = dob;
+	}
 	public ApplicationUser() {
 		super();
 
@@ -162,12 +178,8 @@ public class ApplicationUser implements Serializable {
 		this.panNo = panNo;
 	}
 
-	public ApplicationUser(String firstName, String LastName, String emailId, long i) {
-		this.firstName =firstName;
-		this.LastName = LastName;
-		this.emailId =emailId;
-		this.contactNo =i;
-	}
+
+	
 
 	public Integer size() {
 		// TODO Auto-generated method stub

@@ -19,6 +19,8 @@ import com.cts.serviceimplementation.CustomerServiceImplementation;
 @RequestMapping("/user")
 public class AuthenticationController {
 
+	//FOR LOGIN PURPOSE USING JWT
+	
 	@Autowired
 	private AuthenticationManager authenticationManager;
 
@@ -30,7 +32,10 @@ public class AuthenticationController {
 
 	@Autowired
 	private CustomerServiceImplementation customerService;
+	
 
+	//CONTROLLER FOR GENERATING TOKEN IF USER IS AUTHENTICATED
+	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ApiResponse<AuthToken> register(@RequestBody User user) throws AuthenticationException {
 

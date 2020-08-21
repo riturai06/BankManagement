@@ -6,17 +6,25 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
+
 import com.cts.entity.ApplicationUser;
+
 import static com.cts.config.SecurityConstants.ACCESS_TOKEN_VALIDITY_SECONDS;
 import static com.cts.config.SecurityConstants.SIGNING_KEY;
+
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.function.Function;
 
+//https://jwt.io/
+
 @Component
 public class JwtTokenUtil implements Serializable {
 
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 
 	public String getUsernameFromToken(String token) {
