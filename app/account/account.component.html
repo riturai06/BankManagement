@@ -1,0 +1,84 @@
+<div class="container userform">
+    <div class="card">
+        <h5 class="card-header text-white">Account Registration</h5>
+        <div class="card-body">
+            <form [formGroup]="accountForm" (ngSubmit)="onFormSubmit()">
+
+                <!-- <div class="form-row">
+                    <div class="col">
+                        <label for="">Bank Id:</label>
+                        <input type="text" class="form-control" formControlName="bankId" placeholder="Bank Id"
+                            [(ngModel)]="this.account.bankId" name="bankId">
+                         <div class="error"
+                            *ngIf="accountForm.controls['micrCode'].hasError('required') && accountForm.controls['micrCode'].touched">
+                            MICR Code is required'
+                        </div> 
+                    </div>
+                </div> -->
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="">Account No:</label>
+
+                        <input type="text" class="form-control" formControlName="accountNo" placeholder="Account No"
+                            [(ngModel)]="account.accountNo" name="accountNo">
+                        <div class="error"
+                            *ngIf="accountForm.controls['accountNo'].hasError('required') && accountForm.controls['accountNo'].touched">
+                            Account No is required</div>
+
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="">Bank Name:</label>
+
+                        <input type="text" class="form-control" formControlName="bankName" placeholder="Bank Name"
+                            [(ngModel)]="account.bankName" name="bankName">
+                        <div class="error"
+                            *ngIf="accountForm.controls['bankName'].hasError('required') && accountForm.controls['bankName'].touched">
+                            Bank Name is required</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <label for="">MICR CODE:</label>
+                        <input type="text" class="form-control" formControlName="micrCode" placeholder="Micr Code"
+                            [(ngModel)]="this.account.micrCode" name="micrCode">
+                        <div class="error"
+                            *ngIf="accountForm.controls['micrCode'].hasError('required') && accountForm.controls['micrCode'].touched">
+                            MICR Code is required</div>
+                    </div>
+                </div><br>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>IFSC Code:</label>
+                        <input type="text" class="form-control" formControlName="ifsc" placeholder="Ifsc Code"
+                            [(ngModel)]="account.ifsc" name="ifsc">
+                        <div class="error"
+                            *ngIf="accountForm.controls['ifsc'].hasError('ifsc') && accountForm.controls['ifsc'].touched">
+                            IFSC Code is required</div>
+                    </div>
+                </div>
+
+                <!-- <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Pan No:</label>
+                        <input type="text" class="form-control" placeholder="Pan No" [(ngModel)]="account.user.panNo"
+                            name="panNo">
+                    </div>
+                </div>  -->
+                <div class="form-row">
+                    <div class="text-center col-md-12 mt-3 mb-2">
+                        <button class="btn btn-success savebutton" type="button" type="button" (click)="onFormSubmit()"
+                            ng-disabled="form.$invalid">Register</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
