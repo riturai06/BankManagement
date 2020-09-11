@@ -1,0 +1,33 @@
+<h4 class="display-10 text-center">Investment Details</h4><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <tr class="acc">
+                <th>Fund ID</th>
+                <th>Fund Name</th>
+                <th>Amount</th>
+                <th>Timestamp</th>
+                <th>Pan Number</th>
+                </tr>   
+                <tr *ngFor="let funddetail of funddetails" class ="texts">
+                    <td>{{funddetail.fundId}}</td>
+                    <td>{{funddetail.fundName}}</td>
+                    <td>{{funddetail.amount}}</td>
+                    <td>{{funddetail.timestamp}}</td>
+                    <td>{{username}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <!-- <div class="col-md-10">
+            <a routerLink="/account" class="btn btn-outline-primary account-btn ">Create an Account</a>
+        </div> -->
+        <div class="col-md-10"> 
+            <a routerLink="/mutualfund" class="btn btn-outline-primary invest-btn ">Invest in Mutual Fund</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<h4 class="display-10 text-center">Please Enter Fund Id</h4><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Fund Id:</label>
+                    <input type="text" class="form-control" placeholder="Fund Id" [(ngModel)]="this.funddetails.fundId"
+                        name="fundId">
+                </div>
+                <div class="form-group col-md-6">
+                <button class="btn btn-outline-primary invest-btn btn-lg float-left" (click)="onSubmit(this.funddetails.fundId)">Submit</button>
+            </div>
+            </div> 
+
+        </div>
+    </div><br><br>
+
+
+
+
+<!-- <div class="container"> -->
+<h4 class="display-10 text-center">Transaction Details</h4><br><br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <tr class="acc">
+                <th>Fund ID</th>
+                <th>Fund Name</th>
+                <th>Amount</th>
+                <th>Timestamp</th>
+                <th>Pan Number</th>
+                </tr>   
+                <tr *ngFor="let funddetail of funddetails" class ="texts">
+                    <td>{{funddetail.fundId}}</td>
+                    <td>{{funddetail.fundName}}</td>
+                    <td>{{funddetail.amount| currency: 'INR'}}</td>
+                    <td>{{funddetail.timestamp}}</td>
+                    <td>{{panNo}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+
+
