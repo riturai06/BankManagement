@@ -1,0 +1,27 @@
+.invest-btn{
+    padding: 4px;
+    width: 90px;
+    height:40px;
+    margin-left: 400px; 
+    font-size: 20px;
+     
+ 
+}
+
+.acc{
+    color: rgb(255, 247, 250);
+    background-color:#5b70e4;
+}
+
+.texts{
+    color: #4a4a85;
+}
+
+.btn{
+    margin-top: 30px;
+    margin-right:10px;
+}
+
+.container{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(156, 196, 252));
+}

@@ -1,0 +1,27 @@
+<h4 class="display-10 text-center">Investment Details</h4><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="display-10 text-center">{{this.msg}}</h1>
+            <table class="table">
+                <tr class="acc">
+                    <th>Fund ID</th>
+                    <th>Fund Name</th>
+                    <th>Amount</th>
+                    <th>Timestamp</th>
+                    <th>Account Number</th>
+                    <th>Bank Name</th>
+                </tr>
+                <tr *ngFor="let funddetail of fundDetails" class="texts">
+                    <td>{{funddetail.fundId}}</td>
+                    <td>{{funddetail.fundName}}</td>
+                    <td>{{funddetail.amount| currency : 'INR'}}</td>
+                    <td>{{funddetail.timestamp}}</td>
+                    <td>{{funddetail.account.accountNo}}</td>
+                    <td>{{funddetail.account.bankName}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
