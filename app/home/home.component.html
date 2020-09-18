@@ -1,0 +1,35 @@
+<div class="container-fluid customer-info" *ngIf="isLoggedIn == true">
+    <div class="row customer">
+        <div class="col-lg-8 text-white text-center text-justify start-text">
+            <h2>Welcome {{user.firstName}} Let's Start Banking</h2>
+            <div class="text-center button-op">
+                <a class="btn btn-outline-primary rounded-pill px-4 py-3 text-uppercase font-weight-bold order text-white" routerLink="/account">Create Account</a>&nbsp;
+                <a class="btn btn-outline-primary rounded-pill px-4 py-3 text-uppercase font-weight-bold order text-white" routerLink="/addfund">Add Mutual Fund</a>
+            </div>
+        </div>
+    </div> 
+    <hr>
+    <div class="row">    
+        <div class="col-md-12 content">
+            <h4 class="heading rounded-pill px-1 py-1 text-center">Username</h4>
+            <h5 class="value text-center text-justify">{{user.firstName}}&nbsp;&nbsp;{{user.lastName}}</h5>
+            <hr>
+        </div>
+
+        <div class="col-md-6 content">
+            <h4 class="heading rounded-pill px-1 py-1 text-center">PAN Number</h4>
+            <h5 class="value text-justify text-center">{{user.panNo}}</h5>
+            <hr>
+            <h4 class="heading rounded-pill px-1 py-1 text-center">DOB</h4>
+            <h5 class="value text-justify text-center">{{user.dob|date}}</h5>
+        </div>
+        <div class="col-md-6 content">
+            <h4 class="heading rounded-pill px-1 py-1 text-center">Email Id</h4>
+            <h5 class="value text-center text-justify">{{user.emailId}}</h5>
+            <hr>
+            <h4 class="heading rounded-pill px-1 py-1 text-center">Contact Number</h4>
+            <h5 class="value text-center text-justify">{{user.contactNo}}</h5>
+        </div>
+    </div> 
+    <hr>
+</div>

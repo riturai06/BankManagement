@@ -1,0 +1,36 @@
+/* img{
+    width: 85%;
+} */
+.start-text{
+    text-align: center;
+    padding-top: 60px;
+}
+.customer{
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(60, 149, 250));
+    padding:20px;
+}
+
+.customer-info{
+    margin-bottom: 10px;
+}
+.img-avatar{
+    margin-top: 20px;
+}
+
+.heading{
+    display: grid;
+    color: whitesmoke;
+    background-color: rgba(33, 37, 46, 0.726);
+    box-shadow: 0 4px 8px 0 rgba(39, 120, 243, 0.658), 0 6px 20px 0 rgba(173, 203, 247, 0.658);
+}
+
+.main-heading{
+    margin-bottom: 50px;
+}
+.content{
+    box-shadow: 3px 3px 4px 4px rgba(223, 210, 235, 0.842), 0 6px 20px 0 rgba(165, 35, 35, 0.836);
+}
+.button-op{
+    padding-top: 10px;
+}
